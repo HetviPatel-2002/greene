@@ -41,3 +41,26 @@
   margin: 10px;
   cursor: pointer;
 }
+.credit-div {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
+}
+
+.credit-label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 8px;
+}
+
+.credit-amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50;
+  padding: 6px 12px;
+  background-color: #eaf7ea;
+  border-radius: 4px;
+} 

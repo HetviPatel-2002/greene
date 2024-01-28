@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 
 export const CartItem = (props) => {
-  const { id, productName, price, productImage } = props.data;
+  const { id, productName, price, productImage,credit } = props.data;
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
 
@@ -21,6 +21,10 @@ export const CartItem = (props) => {
             onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
           />
           <button onClick={() => addToCart(id)}> + </button>
+          <div class="credit-div">
+        <span class="credit-label">Credit:</span>
+        <div class="credit-amount">{credit}</div>
+    </div>
         </div>
       </div>
     </div>
